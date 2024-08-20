@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover,
+a:active {
+    color: lightgrey;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: inherit;
+}
+
+.navigation-items{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+
+
+@media only screen and (max-width: 599px){
+    .navigation {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1200px){
+    .menu {
+        display: none;
+    }
+}

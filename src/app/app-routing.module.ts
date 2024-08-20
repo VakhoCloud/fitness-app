@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { canMatch } from './auth/auth.guard';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: WelcomeComponent},
+  { 
+    path: 'training',  
+    loadChildren: () => import('./training/training.module').then(m => m.TrainingModule),
+    canMatch: [canMatch],
+  }, 
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
