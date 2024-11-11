@@ -24,7 +24,6 @@ export class PastTrainingsComponent implements OnInit, AfterViewInit {
   constructor(
     private trainingService: TrainingService,
     private store: Store<fromTraining.State>
-  
   ) {}
 
   ngOnInit(): void {

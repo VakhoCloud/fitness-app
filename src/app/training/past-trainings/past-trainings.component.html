@@ -18,7 +18,7 @@
     
     <ng-container matColumnDef="calories">
         <mat-header-cell *matHeaderCellDef mat-sort-header>Calories</mat-header-cell>
-        <mat-cell *matCellDef="let element">{{ element.calories }}</mat-cell>
+        <mat-cell *matCellDef="let element">{{ element.calories | number: '1.2-2'}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="duration" >

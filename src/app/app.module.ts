@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from './material.module';
 
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -15,7 +14,7 @@ import { provideFirestore } from '@angular/fire/firestore';
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { provideAuth, getAuth } from '@angular/fire/auth';
-import { AuthsModule } from './auth/auths.module';
+import { AuthsModule } from './auth/auths.module';  
 import { TrainingModule } from './training/training.module';
 import { StoreModule } from '@ngrx/store';
 import { reducers } from './app.reducer';
@@ -30,7 +29,6 @@ import { BrowserModule } from '@angular/platform-browser';
   ],
   imports: [
     BrowserModule,
-    // BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
     AuthsModule,
